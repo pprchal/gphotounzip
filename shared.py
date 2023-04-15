@@ -1,8 +1,10 @@
 import hashlib
 
 IGNORED_GOOGLE_FOLDERS = ['/Koš/']
-BUFFER_SIZE = 4096
 IGNORED_DEST = ["@eaDir", "@SynoEAStream", "SYNOINDEX_", "SYNOPHOTO_"]
+
+
+BUFFER_SIZE = 4096
 
 def is_ignored(path, ignored):
     return any(ignored in path for ignored in ignored)
